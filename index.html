@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Pathfinder</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link id="cssTheme" rel="stylesheet" href="public/styling/cssBasic.css"/>
+    <link rel="shortcut icon" type="image/png" href="public/styling/icons8-gem-stone-48.png"/>
+  </head>
+  <body>
+    <div id='navbarDiv'>
+     <nav class="navbar navbar-inverse">
+       <div class="container-fluid">
+         <div class="navbar-header" style="height: 60;">
+           <a id="refreshButton" class="navbar-brand" href="#" style="font-size: 30; color:#61dafb; padding-left: 40;padding-bottom: 20;">Pathfinder</a>
+         </div>
+         <ul class="nav navbar-nav" style="padding-top: 5;">
+           <li class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Algorithms
+             <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+              <li id='startButtonDijkstra'><a href="#">Dijkstra's Algorithm</a></li>
+              <li id='startButtonAStar2'><a href="#">A* Search</a></li>
+              <li id='startButtonGreedy'><a href="#">Greedy Best-first Search</a></li>
+              <li id='startButtonAStar'><a href="#">Swarm Algorithm</a></li>
+              <li id='startButtonAStar3'><a href="#">Convergent Swarm Algorithm</a></li>
+              <li id='startButtonBidirectional'><a href="#">Bidirectional Swarm Algorithm</a></li>
+              <li id='startButtonBFS'><a href="#">Breadth-first Search</a></li>
+              <li id='startButtonDFS'><a href="#">Depth-first Search</a></li>
+             </ul>
+           </li>
+           <li class="dropdown">
+             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mazes
+             <span class="caret"></span></a>
+             <ul class="dropdown-menu">
+               <li id='startButtonCreateMazeOne'><a href="#">Generate Random Maze</a></li>
+               <li id='startButtonCreateMazeTwo'><a href="#">Generate Recursive Division</a></li>
+               <li id='startButtonCreateMazeThree'></li>
+               <li id='startButtonCreateMazeFour'></li>
+               <li id='startButtonCreateMazeWeights'></li>
+               <li id='startStairDemonstration'></li>
+             </ul>
+           </li>
+           <li class="dropdown">
+            <a id="adjustSpeed" class="dropdown-toggle" data-toggle="dropdown" href="#">Speed: Fast
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li id='adjustFast'><a href="#">Fast</a></li>
+              <li id='adjustAverage'><a href="#">Average</a></li>
+              <li id='adjustSlow'><a href="#">Slow</a></li>
+            </ul>
+          </li>
+           <li id='startButtonAddObject'></li>
+           <li id='startButtonClearBoard'><a href="#">Clear Board</a></li>
+           <li id='startButtonClearWalls'><a href="#">Clear Walls &amp; Weights</a></li>
+           <li id='startButtonClearPath'><a href="#">Clear Path</a></li>
+         </ul>
+         <div style="padding-top: 20;"> <a href="https://www.linkedin.com/in/dkobalia/" style="padding-left: 200;">Made By David Kobalia</a></div>
+       </div>
+     </nav>
+   </div>
+    <div id="tutorial" style="background-color: black;color: white; height: 1; width: 1;">
+      <h6></h6>
+      <p></p>
+      <div id="tutorialCounter"></div>
+      <img id="mainTutorialImage" src="public/styling/icons8-algorithm-64.png">
+    </div>
+    <div id='mainGrid'>
+      <div id='mainText'>
+        <ul>
+          <li id='startButtonStart' style="color: black;"><button id="actualStartButton" class="btn btn-default navbar-btn" type="button" style="color:#61dafb;background-color: black;">Go Visualize!</button></li>
+
+          <li>
+            <div class="start"></div>Start Node </li>
+          <li>
+            <div class="target"></div>End Node</li>
+          
+          <li>
+            <div class="unvisited"></div>Unvisited Nodes</li>
+          <li>
+            <div class="visited"></div>Visited Nodes</li>
+          <li>
+            <div class="shortest-path"></div>Shortest Path</li>
+          <li>
+            <div class="wall"></div>Draw Wall</li>
+        </ul>
+      </div>
+      <div id="algorithmDescriptor" style="color:#FFFFFF"></div>
+      <table style="background-color: #FFFFFF;" id='board'/>
+    </div>
+    
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src='public/browser/bundle.js'></script>
+</html>

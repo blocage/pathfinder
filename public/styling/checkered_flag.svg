@@ -1,0 +1,5 @@
+<svg height="30" width="200" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <a xlink:href="https://www.w3schools.com/graphics/" target="_blank">
+    <text x="0" y="15" fill="red">I love SVG!</text>
+  </a>
+</svg>
